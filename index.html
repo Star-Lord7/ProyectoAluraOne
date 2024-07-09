@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Desencriptar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Encriptar y Desencriptar</h1>
+    <div class="container">
+        <div class="left">
+            <div>
+                <label for="textInput">Ingrese una frase o palabra:</label>
+                <input type="text" id="textInput">
+            </div>
+            <div>
+                <label for="decryptInput">Texto a Desencriptar:</label>
+                <input type="text" id="decryptInput">
+            </div>
+            <div>
+                <button onclick="encrypt()">Encriptar</button>
+                <button onclick="decrypt()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <label for="encryptedText">Texto Encriptado:</label>
+                <input type="text" id="encryptedText" readonly>
+            </div>
+            <div>
+                <label for="decryptedText">Texto Desencriptado:</label>
+                <input type="text" id="decryptedText" readonly>
+            </div>
+            <div>
+                <button onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        Samuel Azucena - 2024
+    </footer>
+</body>
+</html>
